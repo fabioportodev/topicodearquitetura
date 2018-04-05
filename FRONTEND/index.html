@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Projeto Escola</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+		
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="titulo">Projeto Escola</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Alunos</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Matricula</th>
+							<th>Curso</th>
+							<th>Estado Civil</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-alunos">
+						<tr class="alunos">
+							<td class="info-nome"></td>
+							<td class="info-matricula"></td>
+							<td class="info-curso"></td>
+							<td class="info-gordura"></td>
+						</tr>
+
+						
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo Aluno</h2>
+		    <form id="form-adiciona">
+		        <div class="grupo">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o nome" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="matricula">Matricula:</label>
+		            <input id="matricula" name="matricula" type="text" placeholder="digite a matricula" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="curso">Curso:</label>
+		            <input id="curso" name="curso" type="text" placeholder="digite o curso" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="estadocivil">Estado Civil:</label>
+		            <input id="estadocivil" type="text" placeholder="digite o estado civil" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-aluno" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+		<!-- Importação dos JavaScripts AQUI  -->
+		<Script src="js/form.js"></Script>
+	</body>
+</html>
