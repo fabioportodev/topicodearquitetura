@@ -1,19 +1,14 @@
 package dto;
 
+/*Esta classe é voltada para os métodos de validação*/ //          ------------>>>>>>>>> ERRADO !!!! 
+import service.AlunoService;
+
 public class AlunoDTO {
 
 	String matricula;      //     TENTE COLOCAR TODOS OS PARÂMETROS DO DTO COMO STRING !!
 	String nome;
 
-
-
-	public String getMatricula() {
-		return matricula;
-	}
-
-	public String getNome() {
-		return nome;
-	}
+	AlunoService as = new AlunoService();
 
 	public void setMatricula(String matricula){
 //        AlunoDTO.validarMatricula(matricula);

@@ -20,7 +20,7 @@ public class AlunoController {
 		
 	AlunoService sAlunos = new AlunoService();
 	List<AlunoDTO> alunos = sAlunos.getTodosAlunos();
-		return "ALUNO";
+		return "ALUNOOOOOOOOOOOOOOOOO";
 	}
 	
 }

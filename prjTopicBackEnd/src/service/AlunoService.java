@@ -2,8 +2,6 @@ package service;
 
 import java.util.List;
 
-import model.Aluno;
-import dao.AlunoDAO;
 import dto.AlunoDTO;
 
 public class AlunoService {
@@ -36,28 +34,10 @@ public class AlunoService {
 	
 	
 	
-	public void cadastrar(AlunoDTO alunoDTO) throws Exception {
-		if(alunoDTO.getNome() == null || alunoDTO.getNome() == "") {
-			throw new Exception();
-		}
-		if(alunoDTO.getMatricula() == null || alunoDTO.getMatricula() == "") {
-			throw new Exception();
-		}
-		
-		
-		Aluno aluno = new Aluno();
-		aluno.setMatricula(Integer.parseInt(alunoDTO.getMatricula()));
-		aluno.setNome(alunoDTO.getNome());
-		// O restante dos atributos...
+	public void cadastrar(AlunoDTO aluno){
  
-		
-		AlunoDAO dao = new AlunoDAO();
-		dao.salvar(aluno);
-		
-		
-		
 				
-	
+		
 	}
 	
 	public List<AlunoDTO> getTodosAlunos() {

@@ -8,9 +8,9 @@ import dto.CursoDTO;
 @Path("/curso")
 public class CursoController {
 	
-	public void inserirCurso(CursoDTO cursoDTO) throws Exception {
-		CursoService Curso = new CursoService();
-		Curso.inserir(cursoDTO);
+	public void inserirCurso(CursoDTO cursoDTO) {
+		CursoService sCurso = new CursoService();
+		sCurso.inserir(cursoDTO);
 	}
 	
 

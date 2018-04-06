@@ -2,6 +2,12 @@ var botaoAdicionar = document.querySelector("#adicionar-aluno");
 	botaoAdicionar.addEventListener("click", function(event){
 		event.preventDefault();
 
+		var xmlhttp;
+		xmlhttp=new XMLHttpRequest();
+		xmlhttp.onreadystatechange=funcaoTrataRespostaServidor;
+		xmlhttp.open("GET", "https://escola-nerd.herokuapp.com/", true);
+		xmlhttp.send();
+
 
 		var form = document.querySelector("#form-adiciona");
 
